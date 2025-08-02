@@ -19,12 +19,14 @@ export default function Header() {
           </nav>
           
           <div className="flex items-center space-x-3">
-            <Button variant="ghost" className="text-gray-600 hover:text-purple-800">
+            {/* <Button variant="ghost" className="text-gray-600 hover:text-purple-800">
               Sign In
-            </Button>
+            </Button> */}
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWuKFgoZYlWA0fehBcLfiE84dDugrCJHavt4K4qF6XtuXB4w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
             <Button className="bg-purple-800 hover:bg-purple-900 text-white">
               Join Waitlist
             </Button>
+            </a>
           </div>
         </div>
       </div>

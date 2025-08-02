@@ -33,7 +33,7 @@ export default function HeroSection() {
               >
                 Master{" "}
                 <span className="bg-gradient-to-r from-purple-800 to-cyan-600 bg-clip-text text-transparent">
-                  Audio Storytelling
+                  Storytelling
                 </span>{" "}
                 Through Practice
               </h1>
@@ -49,20 +49,23 @@ export default function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-purple-800 hover:bg-purple-900 text-white px-8 py-4 text-lg"
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWuKFgoZYlWA0fehBcLfiE84dDugrCJHavt4K4qF6XtuXB4w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+                <Button
+                  size="lg"
+                  className="bg-purple-800 hover:bg-purple-900 text-white px-8 py-4 text-lg"
+
               >
                 Join the waitlist
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button
+              </a>
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="border-cyan-500 text-cyan-700 hover:bg-cyan-50 px-8 py-4 text-lg"
               >
                 Pre-order beta access
-              </Button>
+              </Button> */}
             </div>
 
             <div className="flex items-center space-x-6 pt-4">

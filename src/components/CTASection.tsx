@@ -17,14 +17,16 @@ export default function CTASection() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWuKFgoZYlWA0fehBcLfiE84dDugrCJHavt4K4qF6XtuXB4w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-purple-800 hover:bg-gray-100 px-8 py-4 text-lg">
               <Star className="mr-2 h-5 w-5" />
               Join the Waitlist
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline" className="border-cyan-300 text-cyan-200 hover:bg-cyan-50 hover:text-purple-800 px-8 py-4 text-lg">
+            </a>
+            {/* <Button size="lg" variant="outline" className="border-cyan-300 text-cyan-200 hover:bg-cyan-50 hover:text-purple-800 px-8 py-4 text-lg">
               Pre-order Beta Access
-            </Button>
+            </Button> */}
           </div>
           
           <div className="pt-8 border-t border-purple-700">
