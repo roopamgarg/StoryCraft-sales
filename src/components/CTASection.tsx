@@ -1,7 +1,7 @@
 import { Button } from "./ui/button";
 import { ArrowRight, Star } from "lucide-react";
 
-export default function CTASection() {
+export default function CTASection({ handleWaitlistSubmit }: { handleWaitlistSubmit: () => void }) {
   return (
     <section className="py-20 bg-gradient-to-r from-purple-800 to-blue-900">
       <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
@@ -17,7 +17,7 @@ export default function CTASection() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWuKFgoZYlWA0fehBcLfiE84dDugrCJHavt4K4qF6XtuXB4w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+            <a onClick={handleWaitlistSubmit} href="https://docs.google.com/forms/d/e/1FAIpQLSfWuKFgoZYlWA0fehBcLfiE84dDugrCJHavt4K4qF6XtuXB4w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-white text-purple-800 hover:bg-gray-100 px-8 py-4 text-lg">
               <Star className="mr-2 h-5 w-5" />
               Join the Waitlist

@@ -19,7 +19,7 @@ import {
   Zap,
 } from "lucide-react";
 
-export default function HeroSection() {
+export default function HeroSection({ handleWaitlistSubmit }: { handleWaitlistSubmit: () => void }) {
   return (
     <section className="pt-24 pb-16 bg-gradient-to-br from-purple-50 via-white to-cyan-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -49,7 +49,7 @@ export default function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWuKFgoZYlWA0fehBcLfiE84dDugrCJHavt4K4qF6XtuXB4w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+              <a onClick={handleWaitlistSubmit} href="https://docs.google.com/forms/d/e/1FAIpQLSfWuKFgoZYlWA0fehBcLfiE84dDugrCJHavt4K4qF6XtuXB4w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   className="bg-purple-800 hover:bg-purple-900 text-white px-8 py-4 text-lg"

@@ -9,16 +9,25 @@ import FAQSection from "./components/FAQSection";
 import Footer from "./components/Footer";
 
 export default function App() {
+  const handleWaitlistSubmit = () => {
+    // Your form submission logic here...
+  
+    // Fire custom event
+    window.gtag('event', 'join_waitlist_clicked', {
+      method: 'landing_page_form',
+      page_location: window.location.href,
+    });
+  };
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      <Header handleWaitlistSubmit={handleWaitlistSubmit} />
       <main>
-        <HeroSection />
+        <HeroSection handleWaitlistSubmit={handleWaitlistSubmit} />
         <ProblemSection />
         <HowItWorksSection />
         <FeaturesSection />
         <SocialProofSection />
-        <CTASection />
+        <CTASection handleWaitlistSubmit={handleWaitlistSubmit} />
         <FAQSection />
       </main>
       <Footer />

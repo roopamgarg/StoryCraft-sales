@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 
-export default function Header() {
+export default function Header({ handleWaitlistSubmit }: { handleWaitlistSubmit: () => void }) {
   return (
     <header className="w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -22,7 +22,7 @@ export default function Header() {
             {/* <Button variant="ghost" className="text-gray-600 hover:text-purple-800">
               Sign In
             </Button> */}
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWuKFgoZYlWA0fehBcLfiE84dDugrCJHavt4K4qF6XtuXB4w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+            <a onClick={handleWaitlistSubmit} href="https://docs.google.com/forms/d/e/1FAIpQLSfWuKFgoZYlWA0fehBcLfiE84dDugrCJHavt4K4qF6XtuXB4w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
             <Button className="bg-purple-800 hover:bg-purple-900 text-white">
               Join Waitlist
             </Button>
