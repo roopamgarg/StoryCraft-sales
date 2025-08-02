@@ -371,7 +371,7 @@ export default function HeroSection() {
             </div>
 
             {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-cyan-400 rounded-full opacity-20"></div>
+            <div className="absolute -top-4 -right-0 md:-right-4 w-24 h-24 bg-cyan-400 rounded-full opacity-20"></div>
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-purple-400 rounded-full opacity-10"></div>
 
             {/* Floating audio visualization */}
