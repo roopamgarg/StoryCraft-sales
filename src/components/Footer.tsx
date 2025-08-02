@@ -18,12 +18,12 @@ export default function Footer() {
           <div className="flex items-center space-x-6">
             <a href="mailto:hello@StoryCraft.ai" className="flex items-center space-x-2 hover:text-cyan-400 transition-colors">
               <Mail className="h-4 w-4" />
-              <span>hello@StoryCraft.ai</span>
+              <span>contact@viralengine.in</span>
             </a>
-            <div className="flex items-center space-x-4">
+            {/* <div className="flex items-center space-x-4">
               <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">Twitter</a>
               <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">LinkedIn</a>
-            </div>
+            </div> */}
           </div>
         </div>
         
