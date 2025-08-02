@@ -90,8 +90,8 @@ export default function HeroSection() {
           </div>
 
           {/* Right side - Audio Storytelling Dashboard Mockup */}
-          <div className="relative">
-            <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden max-w-full">
+          <div className="relative flex md:block justify-center">
+            <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden max-w-[330px] md:max-w-full">
               {/* Dashboard Header */}
               <div className="bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-4 text-white">
                 <div className="flex items-center justify-between">
@@ -371,11 +371,11 @@ export default function HeroSection() {
             </div>
 
             {/* Floating elements */}
-            <div className="absolute -top-4 -right-0 md:-right-4 w-24 h-24 bg-cyan-400 rounded-full opacity-20"></div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-purple-400 rounded-full opacity-10"></div>
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-cyan-400 rounded-full opacity-20 hidden md:block"></div>
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-purple-400 rounded-full opacity-10 hidden md:block"></div>
 
             {/* Floating audio visualization */}
-            <div className="absolute top-4 -left-8 bg-white rounded-xl shadow-lg p-3 border border-gray-200">
+            <div className="absolute top-4 -left-8 bg-white rounded-xl shadow-lg p-3 border border-gray-200 hidden md:block">
               <div className="flex items-center space-x-1">
                 <Headphones className="h-4 w-4 text-purple-600" />
                 <div className="flex space-x-1">
