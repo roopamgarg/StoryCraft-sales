@@ -4,22 +4,22 @@ import { Quote } from "lucide-react";
 export default function SocialProofSection() {
   const testimonials = [
     {
-      quote: "StoryCraft helped me improve my writing in just 4 weeks. The AI feedback is incredibly detailed and the community challenges keep me motivated.",
-      author: "Sarah Chen",
+      quote: "I’ve taken so many courses, but nothing helped me actually practice storytelling. StoryCraft finally gave me a structured way to improve every week",
+      author: "Priya Sharma",
       role: "Content Creator",
-      avatar: "SC"
+      avatar: "PS"
     },
     {
-      quote: "As a startup founder, I needed to tell our story better. The Creator Track gave me exactly the storytelling skills I was missing.",
-      author: "Marcus Johnson",
-      role: "Tech Entrepreneur", 
-      avatar: "MJ"
+      quote: "As a startup founder, pitching my idea was always a struggle. After a few weeks with StoryCraft, I could tell my story in a way that investors actually connected with.",
+      author: "Arjun Mehta",
+      role: "Entrepreneur", 
+      avatar: "AM"
     },
     {
-      quote: "The peer review system is fantastic. I've connected with amazing writers and my stories have never been stronger.",
-      author: "Emily Rodriguez",
-      role: "Novelist",
-      avatar: "ER"
+      quote: "I always thought storytelling was only for writers. But StoryCraft showed me how to use it in everyday communication - from team meetings to client calls.",
+      author: "Ananya Reddy",
+      role: "Product Manager",
+      avatar: "AR"
     }
   ];
 
